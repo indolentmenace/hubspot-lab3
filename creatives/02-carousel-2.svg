@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:lang="ru" width="1200" height="1200" viewBox="0 0 1200 1200"><rect width="1200" height="1200" fill="#edf4ef"/>
+<text x="70" y="77" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#16353b">HubSpot · УЧЕБНЫЙ ПРОЕКТ</text>
+<text x="1000" y="76" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="400" fill="#536a6e">02 / 03</text>
+<text x="70" y="256" font-family="DejaVu Sans,Arial,sans-serif" font-size="76" font-weight="700" fill="#16353b">Вся история</text>
+<text x="70" y="356" font-family="DejaVu Sans,Arial,sans-serif" font-size="76" font-weight="700" fill="#16353b">в одной карточке.</text>
+<rect x="70" y="470" width="1060" height="485" rx="26" fill="#ffffff" stroke="#ccddd2" stroke-width="2"/>
+<circle cx="150" cy="560" r="40" fill="#a5c7bc"/>
+<text x="133" y="574" font-family="DejaVu Sans,Arial,sans-serif" font-size="38" font-weight="700" fill="#16353b">В</text>
+<text x="220" y="563" font-family="DejaVu Sans,Arial,sans-serif" font-size="38" font-weight="700" fill="#16353b">Компания «Вектор»</text>
+<text x="220" y="605" font-family="DejaVu Sans,Arial,sans-serif" font-size="24" font-weight="400" fill="#536a6e">Учебный пример карточки клиента</text>
+<path d="M115 645L1085 645" stroke="#e1e9e3" stroke-width="2"/>
+<text x="115" y="690" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#16353b">Задача</text>
+<text x="365" y="690" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" fill="#16353b">Настроить работу с заявками</text>
+<path d="M115 730L1085 730" stroke="#e1e9e3" stroke-width="2"/>
+<text x="115" y="775" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#16353b">История</text>
+<text x="365" y="775" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" fill="#16353b">Клиент запросил демонстрацию</text>
+<path d="M115 815L1085 815" stroke="#e1e9e3" stroke-width="2"/>
+<text x="115" y="860" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="700" fill="#16353b">Действие</text>
+<text x="365" y="860" font-family="DejaVu Sans,Arial,sans-serif" font-size="25" font-weight="400" fill="#16353b">Передать запрос в отдел продаж</text>
+<text x="70" y="1054" font-family="DejaVu Sans,Arial,sans-serif" font-size="34" font-weight="700" fill="#e85735">Контекст доступен всей команде →</text>
+<text x="70" y="1142" font-family="DejaVu Sans,Arial,sans-serif" font-size="22" font-weight="400" fill="#536a6e">Карусель · Следующий шаг</text>
+</svg>

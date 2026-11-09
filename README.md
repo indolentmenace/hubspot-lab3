@@ -4,11 +4,11 @@
 
 - [Сайт](https://indolentmenace.github.io/hubspot-lab3/)
 - [Материалы для сдачи](https://indolentmenace.github.io/hubspot-lab3/materials.html)
-- [Три креатива и исходники](https://indolentmenace.github.io/hubspot-lab3/creative-studio.html)
+- [Баннер, карусель, видео и исходники](https://indolentmenace.github.io/hubspot-lab3/creative-studio.html)
 
 ## Комплект
 
-Отчёт по четырём этапам (Word и PDF), презентация (PowerPoint и PDF), сайт и три рекламных креатива (PNG и SVG). Дополнительные расчёты включены в сам отчёт.
+Отчёт по четырём этапам (Word и PDF), презентация (PowerPoint и PDF), сайт и статичный баннер, карусель из трёх карточек (PNG/SVG) и видеоролик (MP4, 15 секунд). Дополнительные расчёты включены в сам отчёт.
 
 ## Аналитика
 
