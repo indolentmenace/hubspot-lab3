@@ -1,0 +1,11 @@
+(() => {
+ const track=(event,p)=>window.labTrack?.(event,p);
+ let step=0,started=false,completed=false,requestStarted=false,submitted=false;
+ const scenes=[['Capture the enquiry.','A new prospect wants to explore a shared CRM. Their interest appears in one customer record.'],['Share the context.','Marketing passes the customer context to sales so the conversation starts from the same information.'],['Choose the next action.','The team agrees on a demo and a follow-up. A shared timeline makes the next step clear.']];
+ function render(){document.getElementById('step-label').textContent='STEP '+step+' / 3';document.getElementById('step-title').textContent=scenes[step-1][0];document.getElementById('step-text').textContent=scenes[step-1][1];document.querySelectorAll('.progress i').forEach((el,i)=>el.classList.toggle('active',i<step));const b=document.getElementById('next-step');b.hidden=false;b.textContent=step===3?'Finish walkthrough ✓':'Next step →';}
+ document.querySelectorAll('[data-start]').forEach(b=>b.addEventListener('click',()=>{track('cta_click',{placement:b.dataset.start});if(!started){started=true;step=1;track('demo_start');render()}document.getElementById('demo').scrollIntoView({behavior:'smooth'})}));
+ document.querySelector('[data-cta]').addEventListener('click',()=>track('cta_click',{placement:'request'}));
+ document.getElementById('next-step').addEventListener('click',()=>{if(completed||!started)return;if(step<3){step++;track('demo_step',{step});render()}else{completed=true;track('demo_complete');document.getElementById('next-step').hidden=true;document.getElementById('demo-result').textContent='Walkthrough complete. You can now try the test demo request below.';document.getElementById('step-label').textContent='WALKTHROUGH COMPLETE'}});
+ const form=document.getElementById('request-form');form.addEventListener('change',()=>{if(!requestStarted){requestStarted=true;track('request_start')}});
+ form.addEventListener('submit',e=>{e.preventDefault();if(submitted||!form.reportValidity())return;submitted=true;track('demo_request');const status=document.getElementById('form-status');status.textContent='Test request completed in this browser. No account or meeting has been created. Thank you for taking part.';form.querySelector('button[type="submit"]').disabled=true;});
+})();
