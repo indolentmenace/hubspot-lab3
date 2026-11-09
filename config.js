@@ -1,2 +1,2 @@
-// Public measurement identifiers. Replace only with IDs from the owner's accounts.
+// Публичные идентификаторы счётчиков из аккаунтов владельца сайта.
 window.LAB_CONFIG = { ga4: '', metrica: '' };
