@@ -1,2 +1,2 @@
 // Публичные идентификаторы счётчиков из аккаунтов владельца сайта.
-window.LAB_CONFIG = { ga4: 'G-G3VYMYNQYY', metrica: '' };
+window.LAB_CONFIG = { ga4: 'G-G3VYMYNQYY', metrica: '114146329' };

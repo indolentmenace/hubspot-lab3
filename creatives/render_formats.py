@@ -61,7 +61,7 @@ def box(d,xy,color,r=16,outline=None):d.rounded_rectangle(xy,radius=r,fill=color
 def scene(k,u):
  bg=[INK,CREAM,'#e7f0e9',CORAL][k];im=Image.new('RGB',(1280,720),bg);d=ImageDraw.Draw(im)
  fg='#ffffff' if k in [0,3] else INK;sub='#bdd3cf' if k==0 else MUTED
- tx(d,(60,38),'HubSpot',29,fg,True);tx(d,(240,43),'УЧЕБНЫЙ ВИДЕОРОЛИК',16,fg)
+ tx(d,(60,38),'HubSpot',29,fg,True)
  if k==0:
   tx(d,(60,148),'Заявка есть.',66,fg,True);tx(d,(60,234),'А контекст',58,fg,True);tx(d,(60,311),'потерялся?',58,fg,True)
   tx(d,(64,436),'Письма, таблицы, заметки…',24,sub);tx(d,(64,478),'Соберите историю клиента.',24,sub)
@@ -77,7 +77,6 @@ def scene(k,u):
   for j,(label,body) in enumerate([('Задача','Объединить заявки'),('История','Запрос на демо'),('Действие','Передать в продажи')]):
    if u>j*.65:
     dy=y+126+j*87;d.ellipse((x+28,dy,x+47,dy+19),fill=CORAL);tx(d,(x+64,dy-6),label,20,MUTED);tx(d,(x+64,dy+25),body,26,INK,True)
-  tx(d,(60,643),'Учебная иллюстрация принципа работы CRM.',20,MUTED)
  elif k==2:
   tx(d,(60,145),'Передайте заявку',58,INK,True);tx(d,(60,225),'вместе с контекстом.',58,INK,True)
   pts=[(220,465),(640,465),(1060,465)];d.line((220,465,1060,465),fill='#bdcfc3',width=8)
@@ -91,8 +90,6 @@ def scene(k,u):
   tx(d,(60,155),'Посмотрите демо',64,'#ffffff',True);tx(d,(60,245),'без регистрации.',64,'#ffffff',True)
   tx(d,(65,365),'Три шага, чтобы познакомиться с CRM.',28,'#fff5e7')
   pulse=1+0.018*math.sin(u*3);cx,cy=345,500;w,h=int(560*pulse),int(100*pulse);box(d,(cx-w//2,cy-h//2,cx+w//2,cy+h//2),'#ffffff',14);tx(d,(93,475),'Открыть демонстрацию →',29,INK,True)
-  tx(d,(65,622),'indolentmenace.github.io/hubspot-lab3/',24,'#ffffff')
-  tx(d,(65,666),'Учебный проект. Демонстрация не создаёт аккаунт HubSpot.',17,'#fff5e7')
  return im
 
 def frame(time):
